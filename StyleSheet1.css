@@ -1,0 +1,95 @@
+﻿div.menu-bar{
+position:relative;
+margin: 0;
+padding: 0;
+hight: 30%;
+width: 90%;
+}
+
+div.menu-bar ul{
+margin:0;
+padding:0;
+position:absolute;
+width:100%;
+hight:100%;
+overflow:visible;
+background-color: #eaeae1;
+}
+
+div.menu-bar ul li{
+display: block;
+float: left;
+hight:auto;
+width:130px;
+}
+
+div.menu-bar li>a  {
+padding: 0, 0, 0, 10px;
+    height: 100%;
+    width: 109px;
+    border-right: 1px #5d5636 solid;
+    line-hight: 30px;
+display:block;
+font-style: italic;
+font-size: 18px;
+background-color: #eaeae1;
+color: black;
+} 
+
+div.menu-bar li> a:hover{
+color:red;
+background-color: #d5d5c3;
+}
+
+div.menu-bar li > a:active{
+color:green;
+}
+
+div.menu-bar ul ul{
+display: none;
+position: static;
+    height: auto;
+    width: 160px;
+    border: 1px #666666 solid;
+    background-color: #dddddd;
+}
+
+div.menu-bar li:hover > ul {
+    display: block;
+}
+div.menu-bar ul ul li {
+    position: relative;
+    float: none;
+    display: block;
+    height: 35px;
+    width: 100%;
+    border: none;
+    }
+
+div.menu-bar ul ul li>a {
+    height: 100%;
+    width: 96%;
+    padding: 0 0 0 4%;
+    line-height: 28px;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 12px;
+    font-style: normal;
+    }
+
+    div.menu-bar ul ul li:hover > a {
+    background-color: #cccccc;
+    color: #ff0000;
+}
+div.menu-bar ul ul ul {
+    position: absolute;
+    top: 4px;
+    left: 155px;
+    margin: 0;
+}
+a.menu-nav:after {
+    content:"\00BB";
+    float: right;
+    margin-right: 8px;
+}
